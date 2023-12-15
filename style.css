@@ -35,10 +35,12 @@ body {
 
 img {
   max-width: 100%;
+  margin: var(--m-a);
   display: block;
 }
 
 #parent-container {
+  display: block;
   padding: 1.3rem;
   margin: 0 15px;
   background-color: var(--white);
@@ -73,6 +75,12 @@ h1 {
 
 @media (min-width: 1440px) {
   body {
-    width: var(--desktop) !important;
+    max-width: var(--desktop) !important;
+    justify-content: center;
+  }
+
+  #parent-container {
+    max-width: 370px !important;
+    margin: var(--m-a);
   }
 }
